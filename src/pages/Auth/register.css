@@ -1,0 +1,78 @@
+.register {
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff6e9;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register .mb-2 {
+  margin-bottom: 15px;
+}
+
+.register input[type="text"],
+.register input[type="email"],
+.register input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.register button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0a745d;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register button:hover {
+  background-color: #0d9276;
+}
+
+.register button:active {
+  background-color: #064b3c !important;
+}
+
+.outer {
+  padding-top: 10vh;
+}
+
+.navigator:hover {
+  cursor: pointer;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 5vw; /* Adjust width as needed */
+  margin-right: 10px; /* Adjust margin as needed */
+  min-width: 30px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.heading-text {
+  margin-top: 20px;
+}

@@ -1,0 +1,175 @@
+.about {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  padding: 90px 0;
+}
+
+.Appointment2 {
+  background-color: rgb(4, 82, 206);
+  color: white;
+  font-weight: 400;
+}
+
+.Appointment2:hover {
+  background-color: rgb(4, 82, 206) !important;
+  color: white !important;
+}
+
+.aboutHeading h5 {
+  color: rgb(61, 203, 182);
+}
+
+.aboutSubheading h1 {
+  font-weight: 700 !important;
+  font-size: 2.3rem;
+}
+
+.aboutSubPoint {
+  font-size: medium;
+  font-weight: 900;
+}
+
+/* .noneAtSmallAbout {
+    border-radius: 0 190px 0 0;
+    background-color: rgb(50, 78, 124);
+} */
+
+.aboutDescription p {
+  opacity: 0.8;
+  text-align: justify;
+  font-size: small;
+}
+
+.AboutPoint {
+  font-weight: 500;
+  color: grey;
+  opacity: 0.9;
+}
+
+.imgContainer {
+  position: absolute;
+  height: 70%;
+  width: 40% !important;
+  z-index: 99999999 !important;
+}
+
+.imgContainer img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0 190px 0 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.upperAbout {
+  position: relative;
+  background-color: rgb(61, 203, 182);
+  height: 200px;
+  width: 90%;
+  left: -15px !important;
+  bottom: -65% !important;
+}
+
+.lowerAbout {
+  position: relative;
+  background-color: rgb(168, 192, 228);
+  height: 200px;
+  left: 110px !important;
+  top: -55%;
+}
+
+@media screen and (max-width: 991px) {
+  /* .aboutSubheading h1 br {
+        display: none;
+    } */
+  .about {
+    padding: 30px 0;
+  }
+
+  .aboutSubheading h1 {
+    font-weight: 800 !important;
+    font-size: x-large;
+  }
+
+  .aboutDescription p {
+    opacity: 0.8;
+    text-align: justify;
+    font-size: small;
+  }
+
+  .AboutPoint {
+    font-weight: 400;
+    color: grey;
+    opacity: 0.9;
+    font-size: small;
+  }
+
+  .aboutBtnSmall {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .noneAtSmallAbout {
+    display: none;
+  }
+
+  .about {
+    padding: 40px 0;
+  }
+
+  .aboutSubheading h1 {
+    font-weight: 800 !important;
+    font-size: xx-large;
+  }
+
+  .aboutDescription p {
+    opacity: 0.8;
+    text-align: justify;
+    font-size: medium;
+  }
+
+  .aboutBtnSmall {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .aboutSubheading h1 {
+    font-weight: 700 !important;
+    font-size: x-large;
+  }
+
+  .aboutDescription p {
+    opacity: 0.8;
+    text-align: justify;
+    font-size: small;
+  }
+
+  .aboutBtnSmall {
+    font-size: medium;
+  }
+
+  .aboutBtnSmall {
+    font-size: small;
+  }
+}
+
+@media screen and (min-width: 1447px) {
+  .imgContainer img {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 0 190px 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media screen and (min-width: 1470) {
+  .imgContainer img {
+    height: 250px !important;
+    width: 300px !important;
+    /* object-fit: cover; */
+  }
+}
