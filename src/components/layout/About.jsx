@@ -23,10 +23,10 @@ const About = () => {
             <div className="bookAppointMentBtn mt-2">
               <div className="btnHero m-0 p-0">
                 <a
-                  href="#contacts"
+                  href="/contact"
                   className="m-auto mt-2 btn Appointment2 aboutBtnSmall"
                 >
-                  Book An Appointment
+                  Get in Touch
                 </a>
               </div>
             </div>
