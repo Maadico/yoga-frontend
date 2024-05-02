@@ -26,7 +26,7 @@ const About = () => {
                   href="/contact"
                   className="m-auto mt-2 btn Appointment2 aboutBtnSmall"
                 >
-                  Get in Touch
+                  Get a Callback
                 </a>
               </div>
             </div>
