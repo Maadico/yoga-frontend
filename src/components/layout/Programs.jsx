@@ -14,7 +14,7 @@ const Programs = () => {
             <div className="col-md-4 space">
               <div className="box m-1 text-center">
                 <div className="row m-0 p-0 heading">
-                  <h5>DIABETES REVERSAL</h5>
+                  <h5>GENERAL YOGA SESSION</h5>
                 </div>
                 <img
                   src={programImage}
@@ -23,8 +23,8 @@ const Programs = () => {
                 />
                 <div className="row SubHeading m-0 p-0">
                   <p>
-                    MaaDico's Diabetes Harmony: Naturopathy, personalized diets,
-                    yoga fusion.
+                    Practical, impactful daily exercises and asanas create a
+                    thoughtful program for a healthy body and mind.
                   </p>
                 </div>
                 <div className="row readMore m-0 p-0"></div>
@@ -33,7 +33,7 @@ const Programs = () => {
             <div className="col-md-4 space">
               <div className="box m-1 text-center">
                 <div className="row m-0 p-0 heading">
-                  <h5>WEIGHT MANAGEMENT</h5>
+                  <h5>LIFESTYLE DISORDERS SESSIONS</h5>
                 </div>
                 <img
                   src={programImage}
@@ -43,8 +43,8 @@ const Programs = () => {
 
                 <div className="row SubHeading m-0 p-0">
                   <p>
-                    Tailored plans, expert consultations, and yoga for
-                    sustainable weight control.
+                    Lifestyle Diseases like
+                    Diabetes,Hypertension,Stroke,Thyroid,Obesity
                   </p>
                 </div>
                 <div className="row readMore m-0 p-0"></div>
@@ -53,7 +53,7 @@ const Programs = () => {
             <div className="col-md-4 space">
               <div className="box m-1 text-center">
                 <div className="row m-0 p-0 heading">
-                  <h5>THYROID REVERSAL</h5>
+                  <h5>PREGNANCY YOGA</h5>
                 </div>
                 <img
                   src={programImage}
@@ -63,8 +63,8 @@ const Programs = () => {
 
                 <div className="row SubHeading m-0 p-0">
                   <p>
-                    Naturopathy, diets, and yoga to restore thyroid health
-                    naturally.
+                    Pregnancy yoga we have special teacher are available who
+                    have very experienced in pregnancy yoga
                   </p>
                 </div>
                 <div className="row readMore m-0 p-0"></div>
@@ -73,7 +73,7 @@ const Programs = () => {
             <div className="col-md-4 space">
               <div className="box m-1 text-center">
                 <div className="row m-0 p-0 heading">
-                  <h5>PCOD/PCOS REVERSAL</h5>
+                  <h5>PERSONALISED YOGA SESSIONS</h5>
                 </div>
                 <img
                   src={programImage}
@@ -83,7 +83,9 @@ const Programs = () => {
 
                 <div className="row SubHeading m-0 p-0">
                   <p>
-                    Integrated approach targeting symptoms and hormonal balance.
+                    A solution-oriented approach to a specific problem like
+                    cervical, spondylitis,asthma,back pain,knee pain,managing
+                    stress,frozen shoulder,weight loss etc.
                   </p>
                 </div>
                 <div className="row readMore m-0 p-0"></div>
@@ -92,7 +94,7 @@ const Programs = () => {
             <div className="col-md-4 space">
               <div className="box m-1 text-center">
                 <div className="row m-0 p-0 heading">
-                  <h5>Personalised Yoga Sessions</h5>
+                  <h5>1-1 DOCTOR'S CONSULTATION</h5>
                 </div>
                 <img
                   src={programImage}
@@ -101,30 +103,7 @@ const Programs = () => {
                 />
 
                 <div className="row SubHeading m-0 p-0">
-                  <p>
-                    Certified instructors for mental, emotional balance and
-                    flexibility.
-                  </p>
-                </div>
-                <div className="row readMore m-0 p-0"></div>
-              </div>
-            </div>
-            <div className="col-md-4 space">
-              <div className="box m-1 text-center">
-                <div className="row m-0 p-0 heading">
-                  <h5>1-1 Doctor Consultation for Personalised Diet Plans</h5>
-                </div>
-                <img
-                  src={programImage}
-                  alt="Diabetes Reversal"
-                  className="programImage"
-                />
-
-                <div className="row SubHeading m-0 p-0">
-                  <p>
-                    Personalized diet plans with doctor consultations for
-                    lasting well-being.
-                  </p>
+                  <p>Personalised diet plans with doctor</p>
                 </div>
                 <div className="row readMore m-0 p-0"></div>
               </div>

@@ -13,10 +13,22 @@ const About = () => {
             <div className="row aboutDescription">
               <p className="mt-2">
                 At MaaDico Healthcare, we are dedicated to empowering
-                individuals on their journey towards holistic well-being.
-                Established with a profound commitment to reversing lifestyle
-                disorders, including diabetes, thyroid issues, obesity,
-                PCOD/PCOS, and more, we stand as a beacon of health and hope.
+                individuals on their journey towards holistic well-being.Our
+                yoga instructors are not those who learnt yoga for a month or
+                two for the sake of teaching to earn some extra bucks, without
+                having in-depth knowledge and without knowing how to do it the
+                right way.
+                <br /> That’s why when you start learning yoga from our expert
+                instructors, you’ll not just be learning YOGA, but you will also
+                learn YOGA THERAPY too.Our unique yoga program crafts practical,
+                sustainable plans for building strong, healthy habits, fostering
+                positive lifestyle changes.
+                <br /> Yoga therapy can even be done by people who can’t move
+                their body.
+                <br /> So, if you have a specific health problem for which
+                you’re looking for a solution, please let us know during your
+                trial session. Our expert yoga instructors will work together
+                with you.
               </p>
             </div>
 

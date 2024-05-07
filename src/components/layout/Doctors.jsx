@@ -24,7 +24,7 @@ const doctor = [
     imgLink: gaurav,
     dep: "BNYS",
     description:
-      "An expert in yoga who creates a unique yoga program that fuses ancient practices and modern methods to create sustainable plans for building strong, healthy habits, fostering positive lifestyle changes. He holds a BNYS degree from India's top institution for Naturopathy and Yoga, SDM College of Naturopathy and Yogic Sciences, Karnataka. Since he was fortunate to grow up in the Himalayas with saints and yogis at a very young age, he felt a strong urge to delve deeper into the mysteries of nature, life, and Yoga Sadhna.",
+      "An expert in yoga who creates a unique yoga program that fuses ancient practices and modern methods to create sustainable plans for building strong, healthy habits, fostering positive lifestyle changes. He holds a BNYS degree from India's top institution for Naturopathy and Yoga, SDM College of Naturopathy and Yogic Sciences.At a very young age, he felt a strong urge to delve deeper into the mysteries of nature, life, and Yoga Sadhna.",
   },
   {
     name: "Dr Komal",

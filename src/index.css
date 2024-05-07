@@ -394,3 +394,23 @@ body {
   margin-top: 30px;
   padding: 3rem;
 }
+
+.fixIcon {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 9999999999999;
+  bottom: 10px;
+  right: 15px;
+}
+
+.icon1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgb(108, 148, 216);
+  margin: 15px 0;
+}
