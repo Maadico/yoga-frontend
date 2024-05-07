@@ -1,7 +1,10 @@
 import React from "react";
 import "./Programs.css";
-import programImage from "../../assets/gallery/1.jpg"; // Importing the image URL
-
+import GeneralYogaSession from "../../assets/programs/GeneralYogaSession.jpg"; // Importing the image URL
+import LifestyleDisorder from "../../assets/programs/LifestyleDisorder.jpg"; // Importing the image URL
+import PregnancyYoga from "../../assets/programs/PregnancyYoga.jpg"; // Importing the image URL
+import Personalized from "../../assets/programs/Personalized.jpg"; // Importing the image URL
+import Consultation from "../../assets/programs/Consultation.jpg"; // Importing the image URL
 const Programs = () => {
   return (
     <div className="service py-5 " id="programs">
@@ -17,7 +20,7 @@ const Programs = () => {
                   <h5>GENERAL YOGA SESSION</h5>
                 </div>
                 <img
-                  src={programImage}
+                  src={GeneralYogaSession}
                   alt="Diabetes Reversal"
                   className="programImage"
                 />
@@ -36,7 +39,7 @@ const Programs = () => {
                   <h5>LIFESTYLE DISORDERS SESSIONS</h5>
                 </div>
                 <img
-                  src={programImage}
+                  src={LifestyleDisorder}
                   alt="Diabetes Reversal"
                   className="programImage"
                 />
@@ -56,7 +59,7 @@ const Programs = () => {
                   <h5>PREGNANCY YOGA</h5>
                 </div>
                 <img
-                  src={programImage}
+                  src={PregnancyYoga}
                   alt="Diabetes Reversal"
                   className="programImage"
                 />
@@ -76,7 +79,7 @@ const Programs = () => {
                   <h5>PERSONALISED YOGA SESSIONS</h5>
                 </div>
                 <img
-                  src={programImage}
+                  src={Personalized}
                   alt="Diabetes Reversal"
                   className="programImage"
                 />
@@ -97,7 +100,7 @@ const Programs = () => {
                   <h5>1-1 DOCTOR'S CONSULTATION</h5>
                 </div>
                 <img
-                  src={programImage}
+                  src={Consultation}
                   alt="Diabetes Reversal"
                   className="programImage"
                 />
