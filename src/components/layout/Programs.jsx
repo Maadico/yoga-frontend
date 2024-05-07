@@ -46,8 +46,7 @@ const Programs = () => {
 
                 <div className="row SubHeading m-0 p-0">
                   <p>
-                    Lifestyle Diseases like
-                    Diabetes,Hypertension,Stroke,Thyroid,Obesity
+                    Lifestyle Diseases like Diabetes,Hypertension,Stroke,Thyroid
                   </p>
                 </div>
                 <div className="row readMore m-0 p-0"></div>
@@ -86,9 +85,8 @@ const Programs = () => {
 
                 <div className="row SubHeading m-0 p-0">
                   <p>
-                    A solution-oriented approach to a specific problem like
-                    cervical, spondylitis,asthma,back pain,knee pain,managing
-                    stress,frozen shoulder,weight loss etc.
+                    A solution-oriented approach to specific problems like
+                    cervical, spondylitis,asthma,back pain,knee pain.
                   </p>
                 </div>
                 <div className="row readMore m-0 p-0"></div>
