@@ -71,6 +71,19 @@
   background-color: white;
 }
 
+.developer p {
+  color: white;
+  /* font-weight: bold; */
+}
+
+.developer p a {
+  color: white;
+}
+
+.developer p a:hover {
+  color: rgba(255, 255, 255, 0.808) !important;
+}
+
 @media screen and (max-width: 1022px) {
   .footSecondHeading h4 {
     font-size: 1.2rem !important;
