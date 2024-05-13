@@ -47,18 +47,18 @@
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #0a745d;
+  background-color: #324e7c;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .register button:hover {
-  background-color: #0d9276;
+  background-color: #4c76ba;
 }
 
 .register button:active {
-  background-color: #064b3c !important;
+  background-color: #24385a !important;
 }
 
 .outer {

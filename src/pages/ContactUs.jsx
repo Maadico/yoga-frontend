@@ -48,7 +48,7 @@ const ContactUs = () => {
                 <div className="leftContactList">
                   <div className="l text-center">
                     <span>
-                      <IoMdCall color="rgb(3,69,209)" />
+                      <IoMdCall color="rgb(13, 190, 212)" />
                     </span>
                   </div>
                   <div className="r mx-1">
@@ -59,7 +59,7 @@ const ContactUs = () => {
                 <div className="leftContactList">
                   <div className="l text-center">
                     <span>
-                      <MdEmail color="rgb(3,69,209)" />
+                      <MdEmail color="rgb(13, 190, 212)" />
                     </span>
                   </div>
                   <div className="r mx-1">
@@ -70,7 +70,7 @@ const ContactUs = () => {
                 <div className="leftContactList">
                   <div className="l text-center">
                     <span>
-                      <ImLocation color="rgb(3,69,209)" />
+                      <ImLocation color="rgb(13, 190, 212)" />
                     </span>
                   </div>
                   <div className="r mx-1">
@@ -144,7 +144,7 @@ const ContactUs = () => {
                       <div className="col-md-12">
                         <button
                           type="submit"
-                          className="btn btn-primary mt-3 text-white border-0 px-3 py-2"
+                          className="btn btn-primary mt-3 text-white border-0 px-3 py-2 contactus-btn"
                         >
                           <span> SUBMIT</span>
                         </button>

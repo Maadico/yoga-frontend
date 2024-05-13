@@ -18,9 +18,9 @@ function Header() {
             src={companyLogo}
             alt="Company Logo"
             height="30"
-            className="d-inline-block align-top"
+            className="d-inline-block align-top maadico-font"
           />{" "}
-          Maadico
+          <span className="maadico-font">MaaDico</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

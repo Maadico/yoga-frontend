@@ -63,7 +63,7 @@ const Doctor = () => {
       <div className="container">
         <div className="aboutSubheading">
           <h1>
-            Your <strong>Yoga Instructors</strong>
+            Your <strong>Yoga Doctors</strong>
           </h1>
         </div>
         <div className="slider">

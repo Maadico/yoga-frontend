@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@font-face {
+  font-family: "MaadicoFont";
+  src: url("./fonts/BrolimoRegular-ALgg2.ttf") format("truetype");
+  /* Add additional font formats if necessary */
+  /* Specify the correct path to the font files */
+}
 
 body {
   margin: 0;
@@ -179,6 +185,8 @@ body {
   background-size: cover;
   background-position: center;
   height: 30vh;
+  border-top-right-radius: 100px 30px;
+  border-top-left-radius: 100px 30px;
 }
 
 .contact-content .contact-text {
@@ -324,9 +332,11 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: rgb(158, 245, 216);
+  background-color: #18325b;
 }
-
+.contactus-btn {
+  background-color: #324e7c !important;
+}
 .r {
   width: 200px;
 }
@@ -413,4 +423,10 @@ body {
   border-radius: 50%;
   background-color: rgb(108, 148, 216);
   margin: 15px 0;
+}
+
+.maadico-font {
+  font-family: "MaadicoFont" !important;
+  font-weight: 130;
+  color: #18325b;
 }

@@ -202,9 +202,11 @@ const Register = () => {
                 Verify OTP
               </button>
             )}
-            <button type="submit" className="btn btn-primary">
-              Submit
-            </button>
+            {isEmailLocked && (
+              <button type="submit" className="btn btn-primary">
+                Submit
+              </button>
+            )}
             <div
               className="navigator"
               onClick={() => {
