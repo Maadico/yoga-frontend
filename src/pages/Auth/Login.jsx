@@ -66,7 +66,12 @@ const Login = () => {
       <div className="outer">
         <div className="register">
           <div className="heading">
-            <div className="logo-container">
+            <div
+              onClick={() => {
+                navigate("/");
+              }}
+              className="logo-container"
+            >
               <img src={logo} alt="Maadico Logo" className="logo" />
               <h1 className="heading-text">Maadico</h1>
             </div>

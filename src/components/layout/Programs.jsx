@@ -87,7 +87,7 @@ const Programs = () => {
                 <div className="row SubHeading m-0 p-0">
                   <p>
                     A solution-oriented approach to specific problems like
-                    cervical, spondylitis, asthma, back pain, knee pain.
+                    cervical, spondylitis, asthma, back/knee pain.
                   </p>
                 </div>
                 <div className="row readMore m-0 p-0"></div>

@@ -4,12 +4,14 @@ import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import "./resetpassword.css";
 import logo from "../../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 function ResetPassword() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [isMatching, setIsMatching] = useState(false);
   const { id, token } = useParams();
+  const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -46,7 +48,12 @@ function ResetPassword() {
       <div className="reset-password">
         <div>
           <div className="heading">
-            <div className="logo-container">
+            <div
+              onClick={() => {
+                navigate("/");
+              }}
+              className="logo-container"
+            >
               <img src={logo} alt="Maadico Logo" className="logo" />
               <h1 className="heading-text">Maadico</h1>
             </div>
