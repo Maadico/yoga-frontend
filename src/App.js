@@ -22,6 +22,8 @@ import Joinmeet from "./pages/Joinmeet.jsx";
 import AdminSubscription from "./pages/admin/functions/AdminSubscription.jsx";
 import Privacy from "./pages/Extra/Privacy.jsx";
 import TermsConditions from "./pages/Extra/TermsConditions.jsx";
+import ProgramsPage from "./pages/ProgramsPage.jsx";
+import DoctorsPage from "./pages/DoctorsPage.jsx";
 
 function App() {
   return (
@@ -55,9 +57,11 @@ function App() {
           element={<ResetPassword />}
         ></Route>
 
+        <Route path="/programs/:id" element={<ProgramsPage />} />
         <Route path="/terms-and-conditions" element={<TermsConditions />} />
         <Route path="/privacy-policy" element={<Privacy />} />
         <Route path="/join-meeting" element={<Joinmeet />} />
+        <Route path="/doctors" element={<DoctorsPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="*" element={<PageNotFound />} />

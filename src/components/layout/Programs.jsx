@@ -1,11 +1,12 @@
-import React from "react";
 import "./Programs.css";
+import { useNavigate } from "react-router-dom";
 import GeneralYogaSession from "../../assets/programs/GeneralYogaSession.jpg"; // Importing the image URL
 import LifestyleDisorder from "../../assets/programs/LifestyleDisorder.jpg"; // Importing the image URL
 import PregnancyYoga from "../../assets/programs/PregnancyYoga.jpg"; // Importing the image URL
 import Personalized from "../../assets/programs/Personalized.jpg"; // Importing the image URL
 import Consultation from "../../assets/programs/Consultation.jpg"; // Importing the image URL
 const Programs = () => {
+  const navigate = useNavigate();
   return (
     <div className="service py-5 " id="programs">
       <div className="container ">
@@ -14,7 +15,12 @@ const Programs = () => {
             <h2>Our Programs</h2>
           </div>
           <div className="row m-0 p-0 g-0 ourServices">
-            <div className="col-md-4 space">
+            <div
+              onClick={() => {
+                navigate("/programs/1");
+              }}
+              className="col-md-4 space"
+            >
               <div className="box m-1 text-center">
                 <div className="row m-0 p-0 heading">
                   <h5>GENERAL YOGA SESSION</h5>
@@ -33,7 +39,12 @@ const Programs = () => {
                 <div className="row readMore m-0 p-0"></div>
               </div>
             </div>
-            <div className="col-md-4 space">
+            <div
+              onClick={() => {
+                navigate("/programs/2");
+              }}
+              className="col-md-4 space"
+            >
               <div className="box m-1 text-center">
                 <div className="row m-0 p-0 heading">
                   <h5>LIFESTYLE DISORDERS SESSIONS</h5>
@@ -53,7 +64,12 @@ const Programs = () => {
                 <div className="row readMore m-0 p-0"></div>
               </div>
             </div>
-            <div className="col-md-4 space">
+            <div
+              onClick={() => {
+                navigate("/programs/3");
+              }}
+              className="col-md-4 space"
+            >
               <div className="box m-1 text-center">
                 <div className="row m-0 p-0 heading">
                   <h5>PREGNANCY YOGA</h5>
@@ -73,7 +89,12 @@ const Programs = () => {
                 <div className="row readMore m-0 p-0"></div>
               </div>
             </div>
-            <div className="col-md-4 space">
+            <div
+              onClick={() => {
+                navigate("/programs/4");
+              }}
+              className="col-md-4 space"
+            >
               <div className="box m-1 text-center">
                 <div className="row m-0 p-0 heading">
                   <h5>PERSONALISED YOGA SESSIONS</h5>
@@ -93,7 +114,12 @@ const Programs = () => {
                 <div className="row readMore m-0 p-0"></div>
               </div>
             </div>
-            <div className="col-md-4 space">
+            <div
+              onClick={() => {
+                navigate("/programs/5");
+              }}
+              className="col-md-4 space"
+            >
               <div className="box m-1 text-center">
                 <div className="row m-0 p-0 heading">
                   <h5>1-1 DOCTOR'S CONSULTATION</h5>

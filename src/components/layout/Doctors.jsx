@@ -2,6 +2,7 @@ import React from "react";
 import { FaHandHoldingMedical } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import kunal from "../../assets/doctors/Dr_kunal_Vijay_Bagade.jpg";
 import gaurav from "../../assets/doctors/Dr_govind.JPG";
 import komal from "../../assets/doctors/Dr. Komals.jpg";
@@ -36,7 +37,11 @@ const doctor = [
 ];
 
 const Doctor = () => {
+  const navigate = useNavigate();
   const [slidesPerView, setSlidesPerView] = useState(3);
+  const openDoctor = () => {
+    navigate("/doctors");
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -66,7 +71,7 @@ const Doctor = () => {
             Your <strong>Yoga Doctors</strong>
           </h1>
         </div>
-        <div className="slider">
+        <div onClick={openDoctor} className="slider">
           <Swiper
             slidesPerView={slidesPerView}
             centeredSlides={false}
