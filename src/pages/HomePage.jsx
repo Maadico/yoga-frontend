@@ -10,6 +10,7 @@ import Doctor from "../components/layout/Doctors";
 import About from "../components/layout/About";
 import Programs from "../components/layout/Programs";
 import { useState } from "react";
+import Faques from "../components/layout/Faques";
 import { MdAddIcCall } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaArrowUp } from "react-icons/fa";
@@ -52,6 +53,7 @@ function HomePage() {
       <Header />
       <HeroCarousel />
       <About />
+      <Faques />
       <Programs />
       <Doctor />
       <Gallery />

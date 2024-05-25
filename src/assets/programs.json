@@ -1,21 +1,16 @@
 [
     {
         "id": "6646e0d1ef20b15c1400a372",
-        "title": "Diabetes Program",
-        "Description": "All that you need to reverse diabetes and maintain your health in the long-term",
+        "title": "General Yoga Sessions",
+        "Description": "Practical, impactful daily exercises and asanas create a thoughtful program for a healthy body and mind.",
         "Components": [
-            "1:1 Live Coaching",
-            "Personalised Diet Charts Customised According to Your Daily Routine",
-            "Personalised Diabetic Kit at Your Doorstep which includes:",
-            {
-                "Items": [
-                    "Pancreatic Pack",
-                    "Diabetic Care Tea",
-                    "Yogasana Module"
-                ]
-            },
-            "Daily Diabetes Yoga Sessions Conducted by Our Trained Doctors",
-            "Continuous Doctor Observation and Blood-Sugar Level Monitoring"
+            "Revitalizing and refreshing yoga sessions",
+            "Everyday Morning 2 batches ",
+            "Batch 1- 6:00 AM to 7:00AM",
+            "Batch 2- 7:15 AM to 8:15 AM",
+            "5 days in a week excluding Saturday and Sunday",
+            "Everyday Different Yoga Training includes Meditaion and Breath Work ",
+            "Specailised Diet Plan"
         ],
         "images": [
             "https://img.freepik.com/free-photo/doctor-offering-medical-teleconsultation_23-2149328979.jpg?t=st=1713539869~exp=1713543469~hmac=1c26df67b8a0597898b395f816c107e1133a5ad6ae8fdce46abcd04c0c366b39&w=740",
@@ -26,22 +21,16 @@
         ]
     },
     {
-        "title": "Weight Loss Program ",
+        "title": "Lifestyle Disorders Sessions ",
         "id": "6646e0e1ef20b15c1400a376",
-        "Description": "All that you need to reverse diabetes and maintain your health in the long-term",
+        "Description": "Lifestyle Diseases like Diabetes, Hypertension, Stroke, Thyroid",
         "Components": [
-            "1:1 Live Coaching",
-            "Personalised Diet Charts Customised According to Your Daily Routine",
-            "Personalised Weight Loss Kit at Your Doorstep which includes:",
-            {
-                "Items": [
-                    "Obesity Pack",
-                    "Weight Loss Tea",
-                    "Yogasana Module"
-                ]
-            },
-            "Daily Dynamic Yoga Sessions Conducted by Our Trained Doctors",
-            "Continuous Doctor Observation and Calorie Intake Monitoring"
+            "Special Yoga Therapy particularly designed to a disorder",
+            "Personalised Yoga sessions and One on One Consultation with Doctor",
+            "Yoga Therapy for Rehabilitation Programs",
+            "Yoga Therapy for Obesity,Diabetes Mellitus,Hypertension,Stress,",
+            "High Cholesterol,Malnutrition and Osteoarthritis",
+            "Specialised Diet Plan"
         ],
         "images": [
             "https://img.freepik.com/free-photo/doctor-offering-medical-teleconsultation_23-2149328979.jpg?t=st=1713539869~exp=1713543469~hmac=1c26df67b8a0597898b395f816c107e1133a5ad6ae8fdce46abcd04c0c366b39&w=740",
@@ -52,22 +41,16 @@
         ]
     },
     {
-        "title": "Thyroid Program",
+        "title": "Pregnancy Yoga for Normal Delivery",
         "id": "6646e121ef20b15c1400a37f",
-        "Description": "All that you need to reverse thyroid and maintain your health in the long-term",
+        "Description": " Pregnancy yoga we have special teacher are available who have very experienced in pregnancy yoga ",
         "Components": [
-            "1:1 Live Coaching",
-            "Personalised Diet Charts Customised According to Your Daily Routine",
-            "Personalised Thyroid Kit at Your Doorstep which includes:",
-            {
-                "Items": [
-                    "Thyroid Pack",
-                    "Thyroid Care Tea",
-                    "Yogasana Module"
-                ]
-            },
-            "Daily Thyroid Yoga Sessions Conducted by Our Trained Doctors",
-            "Continuous Doctor Observation and Thyroid Level Monitoring"
+            "Pregnancy Yoga combines Meditation, Pranayama and Asanas",
+            "Helps to combat the discomforts of pregnancy in a holistic intervention for expectant mothers ",
+            "Customized expert-guided plans in prenatal yoga to lay the foundation for a smooth sail into motherhood",
+            "Guided exercises, labor preparation, dietary guidance, breathing techniques are some salient features of our online pregnancy classes.  ",
+            "The goal is to keep the body and mind in a positive state",
+            "1 hour session 5 days in a week excluding Saturday and Sunday"
         ],
         "images": [
             "https://img.freepik.com/free-photo/doctor-offering-medical-teleconsultation_23-2149328979.jpg?t=st=1713539869~exp=1713543469~hmac=1c26df67b8a0597898b395f816c107e1133a5ad6ae8fdce46abcd04c0c366b39&w=740",
@@ -78,22 +61,36 @@
         ]
     },
     {
-        "title": " PCOD/PCOS Reversal Program",
+        "title": "Personalized Yoga Sessions",
         "id": "6646e139ef20b15c1400a384",
-        "Description": "All that you need to reverse PCOD/PCOS and maintain your health in the long-term",
+        "Description": "A solution-oriented approach to specific problems like cervical, spondylitis, asthma, back/knee pain.",
         "Components": [
-            "1:1 Live Coaching",
-            "Personalised Diet Charts Customised According to Your Daily Routine",
-            "Personalised Diabetic Kit at Your Doorstep which includes:",
-            {
-                "Items": [
-                    "PCOD/PCOS Pack",
-                    "PCOD Care Tea",
-                    "Yogasana Module"
-                ]
-            },
-            "Daily PCOD/PCOS Yoga Sessions Conducted by Our Trained Doctors",
-            "Continuous Doctor Observation"
+            "Special Yoga Therapy personally designed for you",
+            "Personalised Yoga Sessions and One on One Consultation with Doctor",
+            "Yoga Therapy for Disorders Reversal Programs",
+            "Yoga Therapy for Cardiovascular Diseases, Cancer, Liver Diseases, Depression,",
+            "Asthma, Stroke, Disc Degenerative Disorders, Parkinson's disease and more ",
+            "Specialised Diet Plan",
+            "1 hour session 5 days in a week excluding Saturday and Sunday"
+        ],
+        "images": [
+            "https://img.freepik.com/free-photo/doctor-offering-medical-teleconsultation_23-2149328979.jpg?t=st=1713539869~exp=1713543469~hmac=1c26df67b8a0597898b395f816c107e1133a5ad6ae8fdce46abcd04c0c366b39&w=740",
+            "https://img.freepik.com/free-photo/flat-lay-charts-organic-food-lunch-boxes_23-2148515964.jpg?t=st=1713541835~exp=1713545435~hmac=0c15bcc90a6ae7affc114b495e3a68bd28634a2900563c106202d276e921969e&w=740",
+            "https://img.freepik.com/premium-photo/blood-pressure-monitor-blood-glucose-monitor-insulin-syringe-pens-blue-heartshaped-bowl-light-gray-concrete-table-medical-equipment-health-monitoring-therapy_327813-1187.jpg?w=740",
+            "https://img.freepik.com/free-photo/pregnant-women-practicing-yoga-together_23-2150316772.jpg?t=st=1713540377~exp=1713543977~hmac=7daebfc99ed0e688adb44a7889e135047c52a29d2fdc5b68add9c5711aa0dfb0&w=740",
+            "https://img.freepik.com/free-photo/focused-doctor-working-his-desk_23-2147646746.jpg?t=st=1713540489~exp=1713544089~hmac=30eabe8a7120fe612787cb58c9f734fc8a17f509f08f3714c2b9e271b8f70665&w=740"
+        ]
+    },
+    {
+        "title": "1 on 1 Doctors Consultation",
+        "id": "6646e139ef20b15c14r0a384",
+        "Description": "Personalised diet plans with doctor consultation for your ailments.",
+        "Components": [
+            "Consult our top doctors online for any health concern",
+            "Authentic information in Yoga Therapy, Naturopathy and Ayurveda ",
+            "Specially designed Diet Plans and home based treatments for your ailments",
+            "Consultation will be via video conferencing or telephonically or chat",
+            "“The good physician treats the disease; the great physician treats the patient who has the disease.” – William Osler"
         ],
         "images": [
             "https://img.freepik.com/free-photo/doctor-offering-medical-teleconsultation_23-2149328979.jpg?t=st=1713539869~exp=1713543469~hmac=1c26df67b8a0597898b395f816c107e1133a5ad6ae8fdce46abcd04c0c366b39&w=740",

@@ -11,7 +11,7 @@ body {
   font-family: "Raleway", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to right, #e5efff, #e5efff);
+  background-image: #f6fcfc;
   overflow-x: hidden; /* Hide horizontal overflow */
 }
 
@@ -181,7 +181,7 @@ body {
 .contact-content {
   padding: 2rem;
   text-align: center;
-  background-image: url("https://coderkube.com/wp-content/uploads/2017/06/top-contact-us-banner.jpg");
+  background-image: url("./assets/contactbg.jpg");
   background-size: cover;
   background-position: center;
   height: 30vh;
@@ -429,4 +429,11 @@ body {
   font-family: "MaadicoFont" !important;
   font-weight: 130;
   color: #18325b;
+}
+
+@media (min-width: 992px) {
+  .faq-container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }

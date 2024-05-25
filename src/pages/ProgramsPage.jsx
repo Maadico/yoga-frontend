@@ -68,39 +68,21 @@ const ProgramPage = () => {
                 </div>
               </div>
               <div className="col-md-6 my-2">
-                <div className="row headingOfProduct">
-                  <p>Most nutrient-rich & revitalising go-to-green</p>
-                  <h1>{programInfo?.name}</h1>
-                </div>
+                <div className="row headingOfProduct"></div>
                 <div className="row my-3">
-                  <div className="d-flex justify-content-between productsDetailsMarginWidth97price">
-                    <a href="#reviews">
-                      <p>See All Reviews</p>
-                    </a>
-                    <div className="priceWithDiscount">
-                      <div className="prices">
-                        <span>₹</span>
-                        <span className="mt-5">{programInfo?.price}</span>
-                      </div>
-                    </div>
-                  </div>
+                  <div className="d-flex justify-content-between productsDetailsMarginWidth97price"></div>
                 </div>
                 <div className="ProgramDetailsMarginWidth97instruction mt-2">
-                  <h1>Program Components</h1>
+                  <h1>{programInfo?.title}</h1>
                   {programInfo?.Components?.map((c, i) => {
                     if (i !== 3) {
                       return (
                         <p className="my-1" key={i}>
-                          ⚫ {c}
+                          {c}
                         </p>
                       );
-                    } else if (i === 3) {
-                      return c.Items.map((item, j) => (
-                        <p key={j}>
-                          {j + 1}. {item}
-                        </p>
-                      ));
                     }
+
                     return null; // Explicit return of null if no condition is met
                   })}
                 </div>
