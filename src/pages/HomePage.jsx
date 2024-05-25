@@ -53,10 +53,10 @@ function HomePage() {
       <Header />
       <HeroCarousel />
       <About />
-      <Faques />
       <Programs />
       <Doctor />
       <Gallery />
+      <Faques />
       <Testimonials />
       <ContactHome />
       <Footer />
