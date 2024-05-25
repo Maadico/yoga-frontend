@@ -430,6 +430,11 @@ body {
   font-weight: 130;
   color: #18325b;
 }
+.faq-container {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 60px;
+}
 
 @media (min-width: 992px) {
   .faq-container {
