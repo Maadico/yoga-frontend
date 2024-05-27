@@ -11,7 +11,7 @@ body {
   font-family: "Raleway", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: #f6fcfc;
+  background-image: linear-gradient(to right, #e5efff, #e5efff);
   overflow-x: hidden; /* Hide horizontal overflow */
 }
 
@@ -177,30 +177,19 @@ body {
 .contact-hero {
   padding-left: 0;
 }
-
 .contact-content {
   padding: 2rem;
   text-align: center;
   background-image: url("./assets/contactbg.jpg");
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
-  height: 30vh;
-  border-top-right-radius: 100px 30px;
-  border-top-left-radius: 100px 30px;
+  width: 100%;
+  height: 15vw;
 }
-
-.contact-content .contact-text {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  height: 100%;
-}
-
-.contact-content .contact-text h3 {
-  color: #ffffff;
+@media screen and (max-width: 767px) {
+  .contact-content {
+    background-image: url("./assets/contactbgs.jpg");
+  }
 }
 
 .cta-button.contact-us {
@@ -434,6 +423,8 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 60px;
+  --bs-accordion-active-bg: #efefef !important;
+  --bs-accordion-btn-focus-box-shadow: none !important;
 }
 
 @media (min-width: 992px) {
