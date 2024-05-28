@@ -18,21 +18,21 @@ const doctor = [
     imgLink: kunal,
     dep: "BNYS",
     description:
-      "A pro expert yoga guru practising yoga since his early childhood. He holds a doctor degree in Naturopathy and Yogic Sciences. He has been practicing yoga for more than 10 years and studied Bachelor's of Naturopathy and Yogic Sciences (B.N.Y.S) 5 and 1/2 years course. He has a warm heart and welcoming nature and is a very motivating person. A person who never did yoga will also feel very safe and encouraged by Dr. Kunal's practice.",
+      "A pro expert yoga guru practising yoga since his early childhood. He holds a doctor degree in Naturopathy and Yogic Sciences. He has been practicing yoga for more than ",
   },
   {
     name: "Dr Gaurav Thakur",
     imgLink: gaurav,
     dep: "BNYS",
     description:
-      "An expert in yoga who creates a unique yoga program that fuses ancient practices and modern methods to create sustainable plans for building strong, healthy habits, fostering positive lifestyle changes. He holds a BNYS degree from India's top institution for Naturopathy and Yoga, SDM College of Naturopathy and Yogic Sciences.At a very young age, he felt a strong urge to delve deeper into the mysteries of nature, life, and Yoga Sadhna.",
+      "An expert in yoga who creates a unique yoga program that fuses ancient practices and modern methods to create sustainable plans for building strong, healthy habits, ",
   },
   {
     name: "Dr Komal",
     imgLink: komal,
     dep: "BNYS",
     description:
-      "Step onto the mat with Dr. Komal for a transformative experience that will leave you feeling grounded, centered and connected to your true self and embark on a path of growth and healing.A dedicated and passionate female yoga instructor holding a BNYS degree. She has a deep understanding of natural healing practices and holistic wellness, she guides  towards physical, mental, and emotional balance through the practice of yoga",
+      "Step onto the mat with Dr. Komal for a transformative experience that will leave you feeling grounded, centered and connected to your true self and embark on a ",
   },
 ];
 
@@ -91,7 +91,9 @@ const Doctor = () => {
                     <span>{d.dep}</span>
                   </div>
                   <div className="description">
-                    <p>{d.description}</p>
+                    <p>
+                      {d.description} <u>view more</u>{" "}
+                    </p>
                   </div>
                   <div className="social">
                     <div className="socialId">
