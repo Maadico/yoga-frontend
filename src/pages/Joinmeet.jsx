@@ -5,6 +5,7 @@ import axios from "axios";
 function Joinmeet() {
   const [meetingLink, setMeetingLink] = useState("");
   const user = JSON.parse(localStorage.getItem("auth"));
+  const [hasCourse, setHasCourse] = useState(true);
   const token = user ? user.token : null;
   const navigate = useNavigate(); // Initialize useNavigate
 
@@ -15,6 +16,10 @@ function Joinmeet() {
           `${process.env.REACT_APP_API}/api/v1/course/join-meeting`,
           { headers: { Authorization: token } }
         );
+        if (response.status === 212) {
+          setHasCourse(false);
+          navigate("/dashboard/user/viewcourses");
+        }
         setMeetingLink(response.data.link);
       } catch (error) {
         console.error("Error fetching data: ", error);
@@ -37,7 +42,10 @@ function Joinmeet() {
 
   return (
     <div>
-      <button onClick={openMeet}>Click here to join the meeting</button>
+      {!hasCourse && <h2>You have no course to join</h2>}
+      {hasCourse && (
+        <button onClick={openMeet}>Click here to join the meeting</button>
+      )}
     </div>
   );
 }

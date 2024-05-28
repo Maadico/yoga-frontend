@@ -23,64 +23,13 @@ export default function UserCourseView() {
     }
   };
 
-  const handleSubscription = async (planID) => {
+  const handleSubscription = async (course_id) => {
     try {
-      const { data } = await axios.get(
-        `${process.env.REACT_APP_API}/api/v1/payment/buy-course/${planID}`,
+      const { data } = await axios.post(
+        `${process.env.REACT_APP_API}/api/v1/payment/buy-course/`,
+        { course_id },
         { headers: { Authorization: token } }
       );
-      console.log(data.subscription);
-      console.log(process.env.REACT_APP_RAZORPAY_KEY_ID);
-      if (data.success) {
-        const options = {
-          key: process.env.REACT_APP_RAZORPAY_KEY_ID,
-          name: "Yoga Classes",
-          subscription_id: data?.subscription,
-          handler: async function (response) {
-            try {
-              const {
-                razorpay_payment_id,
-                razorpay_subscription_id,
-                razorpay_signature,
-              } = response;
-
-              const { data } = await axios.post(
-                `${process.env.REACT_APP_API}/api/v1/payment/payment-verify`,
-                {
-                  razorpay_payment_id,
-                  razorpay_subscription_id,
-                  razorpay_signature,
-                  planID,
-                },
-                {
-                  headers: {
-                    "Content-Type": "application/json",
-                    Authorization: token,
-                  },
-                }
-              );
-              if (data.message === "Payment successful") {
-                alert("Payment successful");
-              } else {
-                alert("Payment failed");
-              }
-
-              console.log(data);
-            } catch (error) {
-              console.log(error);
-            }
-          },
-          prefill: {
-            name: user?.name,
-            email: user?.email,
-          },
-          theme: {
-            color: "#9c003c",
-          },
-        };
-        const razorpay = new window.Razorpay(options);
-        razorpay.open();
-      }
     } catch (error) {
       console.log(error);
     }
@@ -107,7 +56,7 @@ export default function UserCourseView() {
                       Price: Rs {course.price}
                     </Card.Text>
                     <Button
-                      onClick={() => handleSubscription(course.razorpayPlanId)} // Pass the plan ID to the handleSubscription function
+                      onClick={() => handleSubscription(course._id)} // Pass the plan ID to the handleSubscription function
                       variant="primary"
                       className="course-button"
                     >
