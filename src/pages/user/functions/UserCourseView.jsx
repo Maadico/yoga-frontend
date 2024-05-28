@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
 import Header from "../../../components/layout/Header";
 import Footer from "../../../components/layout/Footer";
 export default function UserCourseView() {
@@ -30,8 +31,25 @@ export default function UserCourseView() {
         { course_id },
         { headers: { Authorization: token } }
       );
-    } catch (error) {
-      console.log(error);
+      if (data?.success) {
+        console.log(data);
+
+        if (data && data?.data?.data?.instrumentResponse?.redirectInfo?.url) {
+          console.log(data?.data?.data?.instrumentResponse?.redirectInfo?.url);
+          window.open(
+            data?.data?.data?.instrumentResponse?.redirectInfo?.url,
+            "_blank"
+          );
+        }
+      }
+    } catch (e) {
+      toast(e.response.data.message, {
+        style: {
+          borderRadius: "10px",
+          background: " rgb(24, 50, 91)",
+          color: "#fff",
+        },
+      });
     }
   };
 
@@ -70,6 +88,7 @@ export default function UserCourseView() {
         </Container>
       </div>
       <Footer />
+      <Toaster />
     </div>
   );
 }
