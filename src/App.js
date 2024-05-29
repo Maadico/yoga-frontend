@@ -24,6 +24,7 @@ import Privacy from "./pages/Extra/Privacy.jsx";
 import TermsConditions from "./pages/Extra/TermsConditions.jsx";
 import ProgramsPage from "./pages/ProgramsPage.jsx";
 import DoctorsPage from "./pages/DoctorsPage.jsx";
+import Refund from "./pages/Extra/Refund.jsx";
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function App() {
         <Route path="/programs/:id" element={<ProgramsPage />} />
         <Route path="/terms-and-conditions" element={<TermsConditions />} />
         <Route path="/privacy-policy" element={<Privacy />} />
+        <Route path="/refund" element={<Refund />} />
         <Route path="/join-meeting" element={<Joinmeet />} />
         <Route path="/doctors" element={<DoctorsPage />} />
         <Route path="/login" element={<Login />} />
