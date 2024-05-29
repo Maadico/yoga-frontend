@@ -71,7 +71,7 @@ const Doctor = () => {
             Your <strong>Yoga Doctors</strong>
           </h1>
         </div>
-        <div onClick={openDoctor} className="slider">
+        <div className="slider">
           <Swiper
             slidesPerView={slidesPerView}
             centeredSlides={false}
@@ -91,8 +91,8 @@ const Doctor = () => {
                     <span>{d.dep}</span>
                   </div>
                   <div className="description">
-                    <p>
-                      {d.description} <u>view more</u>{" "}
+                    <p onClick={openDoctor}>
+                      <u>Know more</u>{" "}
                     </p>
                   </div>
                   <div className="social">

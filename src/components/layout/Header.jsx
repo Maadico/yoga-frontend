@@ -2,13 +2,10 @@ import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import companyLogo from "../../assets/logo.png"; // Import your logo file
 
+import { CgProfile } from "react-icons/cg";
 function Header() {
   const isLoggedIn = localStorage.getItem("auth");
-
-  const handleLogout = () => {
-    localStorage.removeItem("auth");
-    window.location.href = "/";
-  };
+  const username = JSON.parse(localStorage.getItem("auth"))?.user.name;
 
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
@@ -38,12 +35,17 @@ function Header() {
           )}
           <Nav>
             {isLoggedIn && (
-              <Nav.Link href="/dashboard/user/profile">Profile</Nav.Link>
+              <>
+                <Nav.Link href="/dashboard/user/profile">
+                  <span className="mx-1">
+                    <CgProfile fontSize={20} />{" "}
+                  </span>
+                  {username}
+                </Nav.Link>
+              </>
             )}
             {!isLoggedIn && <Nav.Link href="/contact">Contact</Nav.Link>}
-            {isLoggedIn ? (
-              <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
-            ) : (
+            {!isLoggedIn && (
               <>
                 <Nav.Link href="/login">Login</Nav.Link>
                 <Nav.Link href="/register">Signup</Nav.Link>

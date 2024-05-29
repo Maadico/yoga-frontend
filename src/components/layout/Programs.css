@@ -48,7 +48,7 @@
 }
 
 .box:hover {
-  background-color: rgb(108, 148, 216);
+  background-color: #18325b;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 

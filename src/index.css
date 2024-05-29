@@ -412,8 +412,9 @@ body {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: rgb(108, 148, 216);
+  background-color: #18325b;
   margin: 15px 0;
+  border: #545962 1px solid;
 }
 
 .maadico-font {
@@ -425,10 +426,13 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 60px;
+  font-size: 1.05rem;
   --bs-accordion-active-bg: #efefef !important;
   --bs-accordion-btn-focus-box-shadow: none !important;
 }
-
+.accordion-button {
+  font-size: 1.1rem !important;
+}
 @media (min-width: 992px) {
   .faq-container {
     margin-left: 10%;

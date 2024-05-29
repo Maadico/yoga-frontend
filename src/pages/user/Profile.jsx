@@ -8,6 +8,10 @@ export default function Profile() {
   const [editing, setEditing] = useState(false);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const handleLogout = () => {
+    localStorage.removeItem("auth");
+    window.location.href = "/";
+  };
 
   useEffect(() => {
     const authData = JSON.parse(localStorage.getItem("auth"));
@@ -81,6 +85,9 @@ export default function Profile() {
                     ) : (
                       <Button onClick={handleEditProfile}>Edit Profile</Button>
                     )}
+                    <Button variant="danger" onClick={handleLogout}>
+                      Logout
+                    </Button>
                   </>
                 )}
               </Card.Body>
