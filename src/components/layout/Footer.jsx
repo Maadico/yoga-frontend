@@ -73,6 +73,9 @@ const Footer = () => {
                 <a href="/privacy-policy">
                   <p>Privacy policy</p>
                 </a>
+                <a href="/refund">
+                  <p>Refund and Cancellation Policy</p>
+                </a>
                 <a href="/contact">
                   <p>Contact support</p>
                 </a>
