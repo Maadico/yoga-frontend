@@ -56,8 +56,8 @@ function HomePage() {
       <About />
       <Programs />
       <Doctor />
-      <Requirements />
       <Gallery />
+      <Requirements />
       <Faques />
       <Testimonials />
       <ContactHome />

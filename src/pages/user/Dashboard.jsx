@@ -19,8 +19,8 @@ function Dashboard() {
       <About />
       <Programs />
       <Doctor />
-      <Requirements />
       <Gallery />
+      <Requirements />
       <Faques />
       <Testimonials />
       <ContactHome />
