@@ -45,47 +45,49 @@ const ForgotPassword = () => {
   return (
     <>
       <Toaster />
-      <div className="outer">
-        <div className="forgot-password">
-          <div className="heading">
+      <div className="login-bg">
+        <div className="outer">
+          <div className="forgot-password">
+            <div className="heading">
+              <div
+                onClick={() => {
+                  navigate("/");
+                }}
+                className="logo-container"
+              >
+                <img src={logo} alt="Maadico Logo" className="logo" />
+                <h1 className="heading-text">Maadico</h1>
+              </div>
+            </div>{" "}
+            <h2>Forgot Password</h2>
+            <br></br>
+            <form onSubmit={handleSubmit}>
+              <div className="mb-2">
+                <input
+                  type="email"
+                  value={email}
+                  className="form-control"
+                  placeholder="Enter Your Email"
+                  required
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              <button
+                type="submit"
+                className="btn btn-primary"
+                disabled={submitted}
+              >
+                {submitted ? "Submitting..." : "Submit"}
+              </button>
+            </form>
             <div
+              className="navigator"
               onClick={() => {
-                navigate("/");
+                navigate("/login");
               }}
-              className="logo-container"
             >
-              <img src={logo} alt="Maadico Logo" className="logo" />
-              <h1 className="heading-text">Maadico</h1>
+              Back to Login
             </div>
-          </div>{" "}
-          <h2>Forgot Password</h2>
-          <br></br>
-          <form onSubmit={handleSubmit}>
-            <div className="mb-2">
-              <input
-                type="email"
-                value={email}
-                className="form-control"
-                placeholder="Enter Your Email"
-                required
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-            <button
-              type="submit"
-              className="btn btn-primary"
-              disabled={submitted}
-            >
-              {submitted ? "Submitting..." : "Submit"}
-            </button>
-          </form>
-          <div
-            className="navigator"
-            onClick={() => {
-              navigate("/login");
-            }}
-          >
-            Back to Login
           </div>
         </div>
       </div>

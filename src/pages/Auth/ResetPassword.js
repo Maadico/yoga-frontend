@@ -5,6 +5,7 @@ import toast, { Toaster } from "react-hot-toast";
 import "./resetpassword.css";
 import logo from "../../assets/logo.png";
 import { useNavigate } from "react-router-dom";
+import Layout from "../../components/layout/Layout";
 
 function ResetPassword() {
   const [password, setPassword] = useState("");
@@ -43,64 +44,68 @@ function ResetPassword() {
   };
 
   return (
-    <div className="outer">
-      <Toaster />
-      <div className="reset-password">
-        <div>
-          <div className="heading">
-            <div
-              onClick={() => {
-                navigate("/");
-              }}
-              className="logo-container"
-            >
-              <img src={logo} alt="Maadico Logo" className="logo" />
-              <h1 className="heading-text">Maadico</h1>
+    <Layout>
+      <div className="login-bg">
+        <div className="outer">
+          <Toaster />
+          <div className="reset-password">
+            <div>
+              <div className="heading">
+                <div
+                  onClick={() => {
+                    navigate("/");
+                  }}
+                  className="logo-container"
+                >
+                  <img src={logo} alt="Maadico Logo" className="logo" />
+                  <h1 className="heading-text">Maadico</h1>
+                </div>
+              </div>{" "}
+              <form onSubmit={handleSubmit}>
+                <div className="form-group">
+                  <label htmlFor="password">
+                    <strong>New Password</strong>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="Enter Password"
+                    autoComplete="off"
+                    name="password"
+                    value={password}
+                    onChange={handlePasswordChange}
+                    className="form-control"
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="confirmPassword">
+                    <strong>Confirm Password</strong>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="Confirm Password"
+                    autoComplete="off"
+                    name="confirmPassword"
+                    value={confirmPassword}
+                    onChange={handleConfirmPasswordChange}
+                    className="form-control"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="btn btn-primary"
+                  disabled={!isMatching}
+                >
+                  Update
+                </button>
+              </form>
+              <div>
+                <a href="/">Back to login</a>
+              </div>
             </div>
-          </div>{" "}
-          <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="password">
-                <strong>New Password</strong>
-              </label>
-              <input
-                type="password"
-                placeholder="Enter Password"
-                autoComplete="off"
-                name="password"
-                value={password}
-                onChange={handlePasswordChange}
-                className="form-control"
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="confirmPassword">
-                <strong>Confirm Password</strong>
-              </label>
-              <input
-                type="password"
-                placeholder="Confirm Password"
-                autoComplete="off"
-                name="confirmPassword"
-                value={confirmPassword}
-                onChange={handleConfirmPasswordChange}
-                className="form-control"
-              />
-            </div>
-            <button
-              type="submit"
-              className="btn btn-primary"
-              disabled={!isMatching}
-            >
-              Update
-            </button>
-          </form>
-          <div>
-            <a href="/">Back to login</a>
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }
 

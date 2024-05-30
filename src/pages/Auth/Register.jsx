@@ -104,123 +104,125 @@ const Register = () => {
 
   return (
     <Layout title="Register Yoga app">
-      <div className="outer">
-        <div className="register">
-          <div className="heading">
-            <div
-              onClick={() => {
-                navigate("/");
-              }}
-              className="logo-container"
-            >
-              <img src={logo} alt="Maadico Logo" className="logo" />
-              <h1 className="heading-text">Maadico</h1>
-            </div>
-          </div>
-          <h2>Register</h2>
-          <form onSubmit={handleSubmit}>
-            <div className="mb-2">
-              <input
-                type="text"
-                value={name}
-                className="form-control"
-                placeholder="Enter Your Name"
-                required
-                onChange={(e) => setName(e.target.value)}
-              />
-            </div>
-            {!isEmailLocked && ( // Conditionally render email input field based on email lock state
-              <div className="mb-2">
-                <input
-                  type="email"
-                  value={email}
-                  className="form-control"
-                  placeholder="Enter Your Email"
-                  required
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </div>
-            )}
-            <div className="mb-2">
-              <input
-                type="text"
-                value={phone}
-                className="form-control"
-                placeholder="Enter Your Phone"
-                required
-                onChange={(e) => setPhone(e.target.value)}
-              />
-            </div>
-            <div className="mb-2 password-input">
-              <input
-                type={showPassword ? "text" : "password"}
-                value={password}
-                className="form-control"
-                placeholder="Enter Your Password"
-                required
-                onChange={(e) => setPassword(e.target.value)}
-              />
-              <span
-                className="password-toggle-icon"
-                onClick={() => setShowPassword(!showPassword)}
+      <div className="login-bg">
+        <div className="outer">
+          <div className="register">
+            <div className="heading">
+              <div
+                onClick={() => {
+                  navigate("/");
+                }}
+                className="logo-container"
               >
-                {showPassword ? <FaEyeSlash /> : <FaEye />}
-              </span>
+                <img src={logo} alt="Maadico Logo" className="logo" />
+                <h1 className="heading-text">Maadico</h1>
+              </div>
             </div>
-            <div className="mb-2">
-              <input
-                type="password"
-                value={confirmPassword}
-                className="form-control"
-                placeholder="Confirm Your Password"
-                required
-                onChange={(e) => setConfirmPassword(e.target.value)}
-              />
-            </div>
-            {showOtpField && !isEmailLocked && (
+            <h2>Register</h2>
+            <form onSubmit={handleSubmit}>
               <div className="mb-2">
                 <input
                   type="text"
-                  value={otp}
+                  value={name}
                   className="form-control"
-                  placeholder="Enter OTP"
+                  placeholder="Enter Your Name"
                   required
-                  onChange={(e) => setOtp(e.target.value)}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
-            )}
-            {!showOtpField && !isEmailLocked && (
-              <button
-                type="button"
-                onClick={handleSendOtp}
-                className="btn btn-primary"
+              {!isEmailLocked && ( // Conditionally render email input field based on email lock state
+                <div className="mb-2">
+                  <input
+                    type="email"
+                    value={email}
+                    className="form-control"
+                    placeholder="Enter Your Email"
+                    required
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
+              )}
+              <div className="mb-2">
+                <input
+                  type="text"
+                  value={phone}
+                  className="form-control"
+                  placeholder="Enter Your Phone"
+                  required
+                  onChange={(e) => setPhone(e.target.value)}
+                />
+              </div>
+              <div className="mb-2 password-input">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  value={password}
+                  className="form-control"
+                  placeholder="Enter Your Password"
+                  required
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+                <span
+                  className="password-toggle-icon"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {showPassword ? <FaEyeSlash /> : <FaEye />}
+                </span>
+              </div>
+              <div className="mb-2">
+                <input
+                  type="password"
+                  value={confirmPassword}
+                  className="form-control"
+                  placeholder="Confirm Your Password"
+                  required
+                  onChange={(e) => setConfirmPassword(e.target.value)}
+                />
+              </div>
+              {showOtpField && !isEmailLocked && (
+                <div className="mb-2">
+                  <input
+                    type="text"
+                    value={otp}
+                    className="form-control"
+                    placeholder="Enter OTP"
+                    required
+                    onChange={(e) => setOtp(e.target.value)}
+                  />
+                </div>
+              )}
+              {!showOtpField && !isEmailLocked && (
+                <button
+                  type="button"
+                  onClick={handleSendOtp}
+                  className="btn btn-primary"
+                >
+                  Send OTP
+                </button>
+              )}
+              {showOtpField && !isEmailLocked && (
+                <button
+                  type="button"
+                  onClick={handleVerifyOtp}
+                  className="btn btn-primary"
+                >
+                  Verify OTP
+                </button>
+              )}
+              {isEmailLocked && (
+                <button type="submit" className="btn btn-primary">
+                  Submit
+                </button>
+              )}
+              <div
+                className="navigator"
+                onClick={() => {
+                  navigate("/login");
+                }}
               >
-                Send OTP
-              </button>
-            )}
-            {showOtpField && !isEmailLocked && (
-              <button
-                type="button"
-                onClick={handleVerifyOtp}
-                className="btn btn-primary"
-              >
-                Verify OTP
-              </button>
-            )}
-            {isEmailLocked && (
-              <button type="submit" className="btn btn-primary">
-                Submit
-              </button>
-            )}
-            <div
-              className="navigator"
-              onClick={() => {
-                navigate("/login");
-              }}
-            >
-              Already Registered? Back to login
-            </div>
-          </form>
+                Already Registered? Back to login
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </Layout>

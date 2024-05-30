@@ -63,71 +63,73 @@ const Login = () => {
 
   return (
     <Layout title="Login Maadico">
-      <div className="outer">
-        <div className="register">
-          <div className="heading">
-            <div
-              onClick={() => {
-                navigate("/");
-              }}
-              className="logo-container"
-            >
-              <img src={logo} alt="Maadico Logo" className="logo" />
-              <h1 className="heading-text">Maadico</h1>
-            </div>
-          </div>
-          <h2>Login</h2>
-          <br></br>
-
-          <form onSubmit={handleSubmit} className="login-form">
-            <div className="mb-3">
-              <input
-                type="email"
-                value={email}
-                className="form-control"
-                id="exampleInputEmail"
-                placeholder="Enter Your Email"
-                required
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-
-            <div className="mb-3 password-input">
-              <input
-                type={showPassword ? "text" : "password"}
-                value={password}
-                className="form-control"
-                id="exampleInputPassword1"
-                placeholder="Enter Your Password"
-                required
-                onChange={(e) => setPassword(e.target.value)}
-              />
-              <span
-                className="password-toggle-icon"
-                onClick={() => setShowPassword(!showPassword)}
-              >
-                {showPassword ? <FaEyeSlash /> : <FaEye />}
-              </span>
-            </div>
-            <button type="submit" className="btn btn-primary">
-              Login
-            </button>
-            <div style={{ display: "flex" }}>
+      <div className="login-bg">
+        <div className="outer">
+          <div className="register">
+            <div className="heading">
               <div
-                className="navigator"
                 onClick={() => {
-                  navigate("/register");
+                  navigate("/");
                 }}
+                className="logo-container"
               >
-                New user? Register here |{" "}
+                <img src={logo} alt="Maadico Logo" className="logo" />
+                <h1 className="heading-text">Maadico</h1>
               </div>
-              <div className="navigator">
-                <div onClick={() => navigate("/forgot-password")}>
-                  | Forgot Password
+            </div>
+            <h2>Login</h2>
+            <br></br>
+
+            <form onSubmit={handleSubmit} className="login-form">
+              <div className="mb-3">
+                <input
+                  type="email"
+                  value={email}
+                  className="form-control"
+                  id="exampleInputEmail"
+                  placeholder="Enter Your Email"
+                  required
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+
+              <div className="mb-3 password-input">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  value={password}
+                  className="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Enter Your Password"
+                  required
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+                <span
+                  className="password-toggle-icon"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {showPassword ? <FaEyeSlash /> : <FaEye />}
+                </span>
+              </div>
+              <button type="submit" className="btn btn-primary">
+                Login
+              </button>
+              <div style={{ display: "flex" }}>
+                <div
+                  className="navigator"
+                  onClick={() => {
+                    navigate("/register");
+                  }}
+                >
+                  New user? Register here |{" "}
+                </div>
+                <div className="navigator">
+                  <div onClick={() => navigate("/forgot-password")}>
+                    | Forgot Password
+                  </div>
                 </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </Layout>
