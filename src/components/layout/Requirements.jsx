@@ -17,7 +17,8 @@ const Requirements = () => {
             <div className="row subtitle heroTitle  flex-wrap-reverse"></div>
             <div className="row heroColor mt-2">
               <p className="description">
-                • A Yoga Mat • Water Bottle <br />
+                • A Yoga Mat
+                <br /> • Water Bottle <br />
                 • A refreshing Ventilated room /open area <br /> • A good
                 Internet connection <br /> • A Web Camera, working audio and
                 built-in microphone (mobile/laptop) <br /> • A Whatsapp Account
