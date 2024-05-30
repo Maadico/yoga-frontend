@@ -14,18 +14,18 @@ import { Pagination, Navigation } from "swiper/modules";
 
 const doctor = [
   {
-    name: "Dr Kunal Vijay Bagade",
-    imgLink: kunal,
-    dep: "BNYS",
-    description:
-      "A pro expert yoga guru practising yoga since his early childhood. He holds a doctor degree in Naturopathy and Yogic Sciences. He has been practicing yoga for more than ",
-  },
-  {
     name: "Dr Gaurav Thakur",
     imgLink: gaurav,
     dep: "BNYS",
     description:
       "An expert in yoga who creates a unique yoga program that fuses ancient practices and modern methods to create sustainable plans for building strong, healthy habits, ",
+  },
+  {
+    name: "Dr Kunal Vijay Bagade",
+    imgLink: kunal,
+    dep: "BNYS",
+    description:
+      "A pro expert yoga guru practising yoga since his early childhood. He holds a doctor degree in Naturopathy and Yogic Sciences. He has been practicing yoga for more than ",
   },
   {
     name: "Dr Komal",
