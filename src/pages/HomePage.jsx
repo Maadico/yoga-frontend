@@ -14,6 +14,7 @@ import Faques from "../components/layout/Faques";
 import { MdAddIcCall } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaArrowUp } from "react-icons/fa";
+import Requirements from "../components/layout/Requirements";
 
 function HomePage() {
   const navigate = useNavigate();
@@ -55,6 +56,7 @@ function HomePage() {
       <About />
       <Programs />
       <Doctor />
+      <Requirements />
       <Gallery />
       <Faques />
       <Testimonials />

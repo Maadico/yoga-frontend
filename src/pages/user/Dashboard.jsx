@@ -9,6 +9,7 @@ import Programs from "../../components/layout/Programs";
 import Gallery from "../../components/layout/Gallery";
 import Faques from "../../components/layout/Faques";
 import Testimonials from "../../components/layout/Testimonials";
+import Requirements from "../../components/layout/Requirements";
 
 function Dashboard() {
   return (
@@ -18,6 +19,7 @@ function Dashboard() {
       <About />
       <Programs />
       <Doctor />
+      <Requirements />
       <Gallery />
       <Faques />
       <Testimonials />

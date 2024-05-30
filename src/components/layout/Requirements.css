@@ -1,0 +1,198 @@
+.Hero {
+  height: auto;
+  min-height: 430px;
+  width: 100%;
+  overflow: hidden !important;
+  background-color: rgb(24, 50, 91);
+  /* background-image: linear-gradient(to right, rgb(4, 82, 206), rgb(29, 99, 211)); */
+  /* border-radius: 0 190px 0 0; */
+}
+
+.heroColor p {
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.heroColor h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.heroColor .description {
+  font-size: 1.1rem;
+
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.btnHero {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+}
+
+.Appointment {
+  background-color: white;
+  color: grey;
+  font-weight: 400;
+}
+
+.Appointment:hover {
+  background-color: white;
+  color: grey;
+}
+
+/* .imgDoctor {
+    margin-top: -14px;
+} */
+
+.imgDoctor .firstDoctor {
+  min-height: 400px;
+  max-height: 30px;
+  margin-left: 10vw;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.imgDoctor .secondDoctor {
+  display: none;
+}
+
+@media screen and (max-width: 1183px) {
+  .atSmall {
+    margin-top: 2px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .heroColor h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+
+  .heroColor .description {
+    font-weight: 400;
+    opacity: 0.7;
+    font-size: small;
+  }
+
+  .Appointment {
+    background-color: white;
+    color: grey;
+    font-weight: 300;
+    font-size: small;
+  }
+
+  .Appointment:hover {
+    background-color: white;
+    color: grey;
+  }
+
+  .Hero {
+    height: auto;
+    /* border-radius: 0 140px 0 0; */
+    padding: 0;
+  }
+
+  .imgDoctor .firstDoctor {
+    height: auto;
+    width: 100%;
+  }
+
+  .imgDoctor {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Hero {
+    height: auto !important;
+  }
+
+  .imgDoctor .firstDoctor {
+    display: none;
+  }
+
+  .imgDoctor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgDoctor .secondDoctor {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  @media (max-width: 525px) {
+    .row.heroColor h1 br {
+      display: none;
+    }
+  }
+
+  .heroColor p {
+    font-weight: 700;
+  }
+
+  .heroColor h1 {
+    font-weight: 800;
+    font-size: 2rem;
+  }
+
+  .heroColor .description {
+    font-weight: 400;
+    opacity: 0.7;
+  }
+
+  .imgDoctor .secondDoctor {
+    height: auto;
+    margin-top: 70px !important;
+  }
+
+  .Hero {
+    height: auto !important;
+    /* border-radius: 0 140px 0 0; */
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .imgDoctor .secondDoctor {
+    display: block;
+    /* height: auto; */
+    object-fit: contain;
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .Appointment,
+  .AppointmentCall {
+    font-weight: 700;
+    font-size: xx-small;
+  }
+
+  .AppointmentCall {
+    padding: 3px 10px !important;
+  }
+
+  .Appointment:hover {
+    background-color: rgb(12, 240, 206);
+    color: white;
+  }
+
+  .heroColor h1 {
+    font-weight: 500;
+    font-size: 2.4rem;
+  }
+
+  .heroColor .description {
+    font-weight: 300;
+    font-size: x-small;
+  }
+}
