@@ -74,17 +74,21 @@ const ProgramPage = () => {
                 </div>
                 <div className="ProgramDetailsMarginWidth97instruction mt-2">
                   <h1>{programInfo?.title}</h1>
+                  <br />
                   {programInfo?.Components?.map((c, i) => {
                     if (i !== 3) {
                       return (
                         <p className="my-1" key={i}>
-                          {c}
+                          - {c}
                         </p>
                       );
                     }
 
                     return null; // Explicit return of null if no condition is met
                   })}
+                </div>
+                <div className="row price mx-3 my-4">
+                  ₹ {programInfo?.price}
                 </div>
                 <div className="row">
                   <div className="addToCartProductsDetails mt-4 d-flex justify-content-end">
@@ -95,10 +99,6 @@ const ProgramPage = () => {
                       BUY NOW
                     </button>
                   </div>
-                </div>
-                <div className="row products_details_description mt-4">
-                  <h1>DESCRIPTION</h1>
-                  <p>{programInfo?.Description}</p>
                 </div>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Button } from "react-bootstrap";
 import axios from "axios";
+
 import toast, { Toaster } from "react-hot-toast";
 import Header from "../../../components/layout/Header";
 import Footer from "../../../components/layout/Footer";
@@ -58,33 +59,44 @@ export default function UserCourseView() {
         <Container>
           <h2 className="course-heading">Our Courses</h2>
           <Row className="course-container">
-            {courses.map((course) => (
-              <Col sm={6} key={course._id}>
-                <Card className="course-card">
-                  <Card.Body className="course-card-body">
-                    <Card.Title className="course-title">
-                      {course.name}
-                    </Card.Title>
-                    <Card.Text className="course-description">
-                      {course.description}
-                    </Card.Text>
-                    <Card.Text className="course-price">
-                      Price: Rs {course.price}
-                    </Card.Text>
+            <div className="row m-0 p-0 g-0 ourServices">
+              {courses.map((course) => (
+                <div
+                  onClick={() => {
+                    // navigate("/programs/4");
+                  }}
+                  className="col-md-4 space"
+                >
+                  <div className="box m-1 text-center">
+                    <div className="row m-0 p-0 heading">
+                      <h5>{course.name}</h5>
+                    </div>
+                    {/* <img
+                  src={Personalized}
+                  alt="Diabetes Reversal"
+                  className="programImage"
+                /> */}
+                    <div className="row SubHeading m-0 p-0">
+                      <p>{course.description}</p>
+                    </div>
+                    <div className="row SubHeading m-0 p-0">
+                      <p>Rs {course.price}</p>
+                    </div>
                     <Button
                       onClick={() => handleSubscription(course._id)} // Pass the plan ID to the handleSubscription function
                       variant="primary"
                       className="course-button"
                     >
                       Register Now
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
+                    </Button>{" "}
+                  </div>
+                </div>
+              ))}
+            </div>
           </Row>
         </Container>
       </div>
+
       <Footer />
       <Toaster />
     </div>

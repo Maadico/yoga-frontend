@@ -2,6 +2,7 @@
     {
         "id": "6646e0d1ef20b15c1400a372",
         "title": "General Yoga Sessions",
+        "price": "1599/- for 90 Days",
         "Description": "Practical, impactful daily exercises and asanas create a thoughtful program for a healthy body and mind.",
         "Components": [
             "Revitalizing and refreshing yoga sessions",
@@ -23,6 +24,7 @@
     },
     {
         "title": "Lifestyle Disorders Sessions ",
+        "price": "4599/- for 1 month",
         "id": "6646e0e1ef20b15c1400a376",
         "Description": "Lifestyle Diseases like Diabetes, Hypertension, Stroke, Thyroid",
         "Components": [
@@ -43,6 +45,7 @@
     },
     {
         "title": "Pregnancy Yoga for Normal Delivery",
+        "price": "4599/- for 1 month",
         "id": "6646e121ef20b15c1400a37f",
         "Description": " Pregnancy yoga we have special teacher are available who have very experienced in pregnancy yoga ",
         "Components": [
@@ -64,6 +67,7 @@
     {
         "title": "Personalized Yoga Sessions",
         "id": "6646e139ef20b15c1400a384",
+        "price": "4599/- for 1 month",
         "Description": "A solution-oriented approach to specific problems like cervical, spondylitis, asthma, back/knee pain.",
         "Components": [
             "Special Yoga Therapy personally designed for you",
@@ -84,6 +88,7 @@
     {
         "title": "1 on 1 Doctors Consultation",
         "id": "6646e139ef20b15c14r0a384",
+        "price": "999/-",
         "Description": "Personalised diet plans with doctor consultation for your ailments.",
         "Components": [
             "Consult our top doctors online for any health concern",

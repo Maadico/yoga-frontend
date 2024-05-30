@@ -8,6 +8,8 @@ import kunal from "../assets/doctors/Dr_kunal_Vijay_Bagade.jpg";
 import gaurav from "../assets/doctors/Dr_govind.JPG";
 import komal from "../assets/doctors/Dr. Komals.jpg";
 import "../components/layout/Doctors.css";
+import { Card, Row, Col, Image } from "react-bootstrap";
+import "swiper/swiper-bundle.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -71,47 +73,27 @@ function DoctorsPage() {
         <div className="descdoctor2">
           lorem isrughriu iuhbrfuih iuhrfiu iu hiu biu bi
         </div>
-        <div className="slider">
-          <Swiper
-            slidesPerView={slidesPerView}
-            centeredSlides={false}
-            spaceBetween={15}
-            navigation={true}
-            modules={[Pagination, Navigation]}
-            className="mySwiper"
-          >
-            {doctor.map((d, i) => (
-              <SwiperSlide key={i}>
-                <img src={d.imgLink} alt={d.name} />
-                <div className="details">
-                  <div className="name">
-                    <h6>{d.name}</h6>
-                  </div>
-                  <div className="department">
-                    <span>{d.dep}</span>
-                  </div>
-                  <div className="description">
-                    <p>{d.description}</p>
-                  </div>
-                  <div className="social">
-                    <div className="socialId">
-                      <span>
-                        <FaHandHoldingMedical fontSize={25} />
-                      </span>
-                      <span>
-                        <FaHandHoldingMedical fontSize={25} />
-                      </span>
-                      <span>
-                        <FaHandHoldingMedical fontSize={25} />
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+        {doctor.map((d, i) => (
+          <Card style={{}}>
+            <Row className="g-0">
+              <Col md="4">
+                <Image src={d.imgLink} alt={d.name} fluid />
+              </Col>
+              <Col md="8">
+                <Card.Body>
+                  <Card.Title>{d.name}</Card.Title>
+                  <Card.Text>{d.description}</Card.Text>
+                  <Card.Text>
+                    <small className="text-muted">{d.dep}</small>
+                  </Card.Text>
+                </Card.Body>
+              </Col>
+            </Row>
+          </Card>
+        ))}
       </div>
+      <></>
+
       <Footer />
     </div>
   );

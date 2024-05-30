@@ -35,7 +35,7 @@ const Register = () => {
         }
       );
       if (res.status === 201) {
-        toast.success("OTP sent successfully!");
+        toast.success("OTP sent, Check your mail!");
         setShowOtpField(true);
       } else {
         toast.error("Failed to send OTP");
