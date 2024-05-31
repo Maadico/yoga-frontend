@@ -37,8 +37,15 @@ export default function UserCourseView() {
 
         if (data && data?.data?.data?.instrumentResponse?.redirectInfo?.url) {
           console.log(data?.data?.data?.instrumentResponse?.redirectInfo?.url);
-          window.location.href =
+
+          const redirectUrl =
             data?.data?.data?.instrumentResponse?.redirectInfo?.url;
+          // if (window.open) {
+          //   window.open(redirectUrl, "_blank");
+          // }
+          setTimeout(() => {
+            window.open(redirectUrl, "_blank");
+          });
         }
       }
     } catch (e) {
