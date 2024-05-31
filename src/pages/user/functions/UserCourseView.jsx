@@ -27,6 +27,7 @@ export default function UserCourseView() {
 
   const handleSubscription = async (course_id) => {
     try {
+      debugger;
       const { data } = await axios.post(
         `${process.env.REACT_APP_API}/api/v1/payment/buy-course/`,
         { course_id },
@@ -41,9 +42,7 @@ export default function UserCourseView() {
           const redirectUrl =
             data?.data?.data?.instrumentResponse?.redirectInfo?.url;
 
-          setTimeout(() => {
-            window.open(redirectUrl, "_blank");
-          });
+          window.open(redirectUrl, "_blank");
         }
       }
     } catch (e) {
