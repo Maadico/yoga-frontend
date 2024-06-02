@@ -15,6 +15,7 @@ function AddCourse() {
     price: "",
     time: "",
     link: "",
+    image: "",
     visible: false,
   });
   const [originalFormData, setOriginalFormData] = useState({});
@@ -152,6 +153,17 @@ function AddCourse() {
                   }
                 />
               </Form.Group>
+              <Form.Group controlId="formImage">
+                <Form.Label>Image</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Enter Image Name"
+                  value={formData.image}
+                  onChange={(e) =>
+                    setFormData({ ...formData, image: e.target.value })
+                  }
+                />
+              </Form.Group>
               <Form.Group controlId="formVisible">
                 <Form.Check
                   type="checkbox"
@@ -284,6 +296,17 @@ function AddCourse() {
                   value={formData.link || ""}
                   onChange={(e) =>
                     setFormData({ ...formData, link: e.target.value })
+                  }
+                />
+              </Form.Group>
+              <Form.Group controlId="formImage">
+                <Form.Label>Image</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Enter Image Name"
+                  value={formData.image || ""}
+                  onChange={(e) =>
+                    setFormData({ ...formData, image: e.target.value })
                   }
                 />
               </Form.Group>

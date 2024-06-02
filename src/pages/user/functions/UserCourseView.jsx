@@ -63,47 +63,40 @@ export default function UserCourseView() {
   return (
     <div>
       <Header />
-      <div className="course-view-page">
-        <Container>
-          <h2 className="course-heading">Our Courses</h2>
-          <Row className="course-container">
-            <div className="row m-0 p-0 g-0 ourServices">
-              {courses.map((course) => (
-                <div
-                  onClick={() => {
-                    // navigate("/programs/4");
-                  }}
-                  className="col-md-4 space"
-                >
-                  <div className="box m-1 text-center">
-                    <div className="row m-0 p-0 heading">
-                      <h5>{course.name}</h5>
-                    </div>
-                    {/* <img
-                  src={Personalized}
-                  alt="Diabetes Reversal"
-                  className="programImage"
-                /> */}
-                    <div className="row SubHeading m-0 p-0">
-                      <p>{course.description}</p>
-                    </div>
-                    <div className="row SubHeading m-0 p-0">
-                      <p>Rs {course.price}</p>
-                    </div>
-                    <Button
-                      onClick={() => handleSubscription(course._id)} // Pass the plan ID to the handleSubscription function
-                      variant="primary"
-                      className="course-button"
-                    >
-                      Register Now
-                    </Button>{" "}
+      <Container>
+        <h2 className="course-heading">Our Courses</h2>
+        <Row className="course-container">
+          <div className="row m-0 p-0 g-0 ourServices">
+            {courses.map((course) => (
+              <div className="col-md-4 space">
+                <div className="box m-1 text-center">
+                  <div className="row m-0 p-0 heading">
+                    <h5>{course.name}</h5>
                   </div>
+                  <img
+                    src={`/assets/Course/${course.image}`}
+                    alt={`${course.name}`}
+                    className="programImage"
+                  />
+                  <div className="row SubHeading m-0 p-0">
+                    <p>{course.description}</p>
+                  </div>
+                  <div className="row SubHeading m-0 p-0">
+                    <p>Rs {course.price}</p>
+                  </div>
+                  <Button
+                    onClick={() => handleSubscription(course._id)} // Pass the plan ID to the handleSubscription function
+                    variant="primary"
+                    className="course-button"
+                  >
+                    Register Now
+                  </Button>{" "}
                 </div>
-              ))}
-            </div>
-          </Row>
-        </Container>
-      </div>
+              </div>
+            ))}
+          </div>
+        </Row>
+      </Container>
 
       <Footer />
       <Toaster />
