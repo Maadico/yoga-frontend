@@ -4,9 +4,10 @@ import Footer from "../components/layout/Footer";
 import kunal from "../assets/doctors/Dr_kunal_Vijay_Bagade.jpg";
 import gaurav from "../assets/doctors/Dr_govind.JPG";
 import komal from "../assets/doctors/Dr. Komals.jpg";
-import "../components/layout/Doctors.css";
 import { Card, Row, Col, Image } from "react-bootstrap";
-const doctor = [
+import "./DoctorPage.css"; // Importing the CSS file
+
+const doctors = [
   {
     name: "Dr Gaurav Thakur",
     imgLink: gaurav,
@@ -34,25 +35,27 @@ function DoctorsPage() {
   return (
     <div>
       <Header />
-      <div className="container2">
-        <div className="aboutSubheading">
+      <div className="container-doctors">
+        <div className="about-subheading">
           <h1>
             Your <strong>Yoga Doctors</strong>
           </h1>
         </div>
-        <div className="descdoctor2">
+        <div className="desc-doctor">
           lorem isrughriu iuhbrfuih iuhrfiu iu hiu biu bi
         </div>
-        {doctor.map((d, i) => (
-          <Card style={{}}>
+        {doctors.map((d, i) => (
+          <Card className="doctor-card" key={i}>
             <Row className="g-0">
-              <Col md="4">
-                <Image src={d.imgLink} alt={d.name} fluid />
+              <Col md="4" xs="12" className="image-col">
+                <Image src={d.imgLink} alt={d.name} className="doctor-image" />
               </Col>
-              <Col md="8">
+              <Col md="8" xs="12">
                 <Card.Body>
-                  <Card.Title>{d.name}</Card.Title>
-                  <Card.Text>{d.description}</Card.Text>
+                  <Card.Title className="doctor-title1">{d.name}</Card.Title>
+                  <Card.Text className="doctor-body1">
+                    {d.description}
+                  </Card.Text>
                   <Card.Text>
                     <small className="text-muted">{d.dep}</small>
                   </Card.Text>
@@ -62,8 +65,6 @@ function DoctorsPage() {
           </Card>
         ))}
       </div>
-      <></>
-
       <Footer />
     </div>
   );

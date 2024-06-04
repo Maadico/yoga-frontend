@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import axios from "axios";
-
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
+import "./Joinmeet.css";
 function Joinmeet() {
   const [meetingLink, setMeetingLink] = useState("");
   const user = JSON.parse(localStorage.getItem("auth"));
@@ -18,7 +20,6 @@ function Joinmeet() {
         );
         if (response.status === 212) {
           setHasCourse(false);
-          navigate("/dashboard/user/viewcourses");
         }
         setMeetingLink(response.data.link);
       } catch (error) {
@@ -41,12 +42,28 @@ function Joinmeet() {
   };
 
   return (
-    <div>
-      {!hasCourse && <h2>You have no course to join</h2>}
-      {hasCourse && (
-        <button onClick={openMeet}>Click here to join the meeting</button>
-      )}
-    </div>
+    <>
+      <Header />
+      <div className="joinmeet-container">
+        {!hasCourse && (
+          <div className="no-course-message">
+            <h2>You have no session to join</h2>
+            <button onClick={() => navigate("/dashboard/user/viewcourses")}>
+              View Available Courses
+            </button>
+          </div>
+        )}
+        {hasCourse && (
+          <div className="meeting-join-section">
+            <h2 className="join-h2">Your Meeting is Ready</h2>
+            <button className="join-meeting-button" onClick={openMeet}>
+              Click here to join the meeting
+            </button>
+          </div>
+        )}
+      </div>
+      <Footer />
+    </>
   );
 }
 

@@ -1,0 +1,50 @@
+.container-doctors {
+  padding: 20px;
+}
+
+.about-subheading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.desc-doctor {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.doctor-card {
+  margin-bottom: 20px;
+}
+.doctor-title1 {
+  margin-top: 20px;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+.doctor-body1 {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 10px;
+}
+.image-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.doctor-image {
+  max-width: 100%;
+  max-height: 600px;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 767.98px) {
+  .doctor-card .row {
+    flex-direction: column;
+  }
+}
