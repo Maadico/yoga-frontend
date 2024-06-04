@@ -33,27 +33,21 @@ export default function UserCourseView() {
         { course_id },
         { headers: { Authorization: token } }
       );
+
       if (data?.success) {
-        console.log(data);
-
-        if (data && data?.data?.data?.instrumentResponse?.redirectInfo?.url) {
-          console.log(data?.data?.data?.instrumentResponse?.redirectInfo?.url);
-
+        if (data?.data?.data?.instrumentResponse?.redirectInfo?.url) {
           const redirectUrl =
             data?.data?.data?.instrumentResponse?.redirectInfo?.url;
-          // if (window.open) {
-          //   window.open(redirectUrl, "_blank");
-          // }
-          setTimeout(() => {
-            window.open(redirectUrl, "_blank");
-          });
+
+          // Open the payment URL in the same tab, preserving the referrer
+          window.location.href = redirectUrl;
         }
       }
     } catch (e) {
       toast(e.response.data.message, {
         style: {
           borderRadius: "10px",
-          background: " rgb(24, 50, 91)",
+          background: "rgb(24, 50, 91)",
           color: "#fff",
         },
       });
