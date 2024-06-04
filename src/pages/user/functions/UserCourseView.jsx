@@ -41,9 +41,7 @@ export default function UserCourseView() {
 
           const redirectUrl =
             data?.data?.data?.instrumentResponse?.redirectInfo?.url;
-          // if (window.open) {
-          //   window.open(redirectUrl, "_blank");
-          // }
+
           setTimeout(() => {
             window.open(redirectUrl, "_blank");
           });
