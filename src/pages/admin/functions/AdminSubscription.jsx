@@ -30,6 +30,7 @@ function AdminSubscription() {
             <th>Name</th>
             <th>Email</th>
             <th>Merchant Transaction ID</th>
+            <th>Amount</th>
             <th>Course Name</th>
             <th>Active</th>
             <th>Days Left</th>
@@ -41,6 +42,7 @@ function AdminSubscription() {
               <td>{subscription.userName}</td>
               <td>{subscription.userEmail}</td>
               <td>{subscription.merchantTransactionId}</td>
+              <td>{subscription.amount}</td>
               <td>{subscription.courseName}</td>
               <td>{subscription.isActive ? "Active" : "Expired"}</td>
               <td>{subscription.daysLeft}</td>
