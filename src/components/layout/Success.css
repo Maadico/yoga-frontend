@@ -1,0 +1,63 @@
+.ps-container {
+  padding: 20px;
+}
+
+.ps-content {
+  max-width: 600px;
+  background-color: white;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ps-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.ps-transaction-id {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.ps-copy-button {
+  background-color: #18325b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ps-copy-button:hover {
+  background-color: #142847;
+}
+
+.pf-container {
+  padding: 20px;
+}
+
+.pf-content {
+  background-color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pf-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #d9534f; /* Red color to indicate failure */
+}
+
+.pf-message {
+  font-size: 16px;
+  margin-bottom: 20px;
+}

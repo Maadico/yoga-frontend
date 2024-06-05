@@ -32,7 +32,10 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/paymentfail" element={<Paymentfail />} />
-        <Route path="/paymentsuccess" element={<Paymentsuccess />} />
+        <Route
+          path="/paymentsuccess/663fa85604e131d60c0c5418/:merchantTransactionId"
+          element={<Paymentsuccess />}
+        />
         <Route path="/dashboard" element={<PrivateRoute />}>
           <Route path="user" element={<Dashboard />} />
           <Route path="user/viewcourses" element={<UserCourseView />} />
