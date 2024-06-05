@@ -42,6 +42,7 @@ function AddCourse() {
         formData
       );
       setShowAddModal(false);
+      window.location.reload();
       fetchCourses();
     } catch (error) {
       console.error("Failed to add course:", error);
@@ -55,6 +56,7 @@ function AddCourse() {
         formData
       );
       setShowEditModal(false);
+      window.location.reload();
       fetchCourses();
     } catch (error) {
       console.error("Failed to edit course:", error);
@@ -67,6 +69,7 @@ function AddCourse() {
         `${process.env.REACT_APP_API}/api/v1/course/delete-course/${selectedCourse._id}`
       );
       setShowDeleteModal(false);
+      window.location.reload();
       fetchCourses();
     } catch (error) {
       console.error("Failed to delete course:", error);
@@ -92,7 +95,13 @@ function AddCourse() {
     <div>
       <AdminLayout>
         <br />
-        <Modal show={showAddModal} onHide={() => setShowAddModal(false)}>
+        <Modal
+          show={showAddModal}
+          onHide={() => {
+            setShowAddModal(false);
+            window.location.reload();
+          }}
+        >
           <Modal.Header closeButton>
             <Modal.Title>Add Course</Modal.Title>
           </Modal.Header>
@@ -332,7 +341,13 @@ function AddCourse() {
           </Modal.Footer>
         </Modal>
 
-        <Modal show={showDeleteModal} onHide={() => setShowDeleteModal(false)}>
+        <Modal
+          show={showDeleteModal}
+          onHide={() => {
+            setShowDeleteModal(false);
+            window.location.reload();
+          }}
+        >
           <Modal.Header closeButton>
             <Modal.Title>Confirm Deletion</Modal.Title>
           </Modal.Header>
