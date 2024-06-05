@@ -16,7 +16,12 @@ const ProgramPage = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(0);
 
   const handleBuyProgram = () => {
-    navigate("/login");
+    const auth = JSON.parse(localStorage.getItem("auth"));
+    if (!auth) {
+      navigate("/login");
+    } else {
+      navigate("/dashboard/user/viewcourses");
+    }
   };
 
   const imagesProducts = programInfo?.images;
