@@ -76,9 +76,9 @@ export default function UserCourseView() {
                     alt={`${course.name}`}
                     className="programImage"
                   />
-                  <div className="row SubHeading m-0 p-0">
+                  {/* <div className="row SubHeading m-0 p-0">
                     <p>{course.description}</p>
-                  </div>
+                  </div> */}
                   <div className="row SubHeading m-0 p-0">
                     <p>Rs {course.price}</p>
                   </div>
