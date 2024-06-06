@@ -81,7 +81,7 @@ const ProgramPage = () => {
                   <h1>{programInfo?.title}</h1>
                   <br />
                   {programInfo?.Components?.map((c, i) => {
-                    if (i !== 3) {
+                    if (i < 8) {
                       return (
                         <p className="my-1" key={i}>
                           - {c}
