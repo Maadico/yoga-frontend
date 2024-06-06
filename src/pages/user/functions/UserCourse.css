@@ -1,0 +1,128 @@
+.service {
+  background-color: rgb(246, 252, 252) !important;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.heroTitle h5 {
+  color: white;
+}
+
+.serviceSubHeading h2 {
+  font-weight: 900;
+}
+
+.boxA {
+  height: 420px;
+  padding: 10px;
+  padding-top: 20px;
+  border-radius: 8px;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box .logo span {
+  color: rgb(141, 236, 224);
+  font-size: 50px;
+}
+
+.box .heading h5 {
+  color: rgb(31, 87, 162);
+  font-weight: 600;
+}
+
+.box .SubHeading p {
+  color: grey;
+  opacity: 0.9;
+}
+
+.readMore span {
+  color: rgb(31, 87, 162);
+  display: hidden;
+}
+
+.space {
+  margin: 10px 0;
+}
+
+.box:hover {
+  background-color: #18325b;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box:hover .logo span {
+  color: white;
+}
+
+.box:hover .heading h5 {
+  color: white;
+  font-weight: 600;
+}
+
+.box:hover .readMore span {
+  display: block;
+  color: black;
+}
+
+.box:hover .SubHeading p {
+  color: whitesmoke;
+  opacity: initial;
+}
+
+@media screen and (max-width: 921px) {
+  .boxA {
+    height: 360px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .boxA {
+    height: 490px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .space {
+    margin: 8px 0;
+    padding: 5px 0;
+  }
+
+  .boxA {
+    padding: 5px;
+
+    border-radius: 5px;
+  }
+
+  .boxA .logo span {
+    font-size: 40px;
+  }
+
+  .boxA .heading h5 {
+    font-weight: 700;
+  }
+
+  .boxA .SubHeading p {
+    color: grey;
+    opacity: 0.7;
+    font-size: medium;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .boxA {
+    width: 90%;
+    margin: 10px auto !important;
+    height: 83vw !important;
+  }
+}
+
+.programImage {
+  width: 80%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px auto; /* Center the image */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}

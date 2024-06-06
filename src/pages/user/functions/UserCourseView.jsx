@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Button } from "react-bootstrap";
 import axios from "axios";
-
+import "./UserCourse.css";
 import toast, { Toaster } from "react-hot-toast";
 import Header from "../../../components/layout/Header";
 import Footer from "../../../components/layout/Footer";
@@ -67,7 +67,7 @@ export default function UserCourseView() {
           <div className="row m-0 p-0 g-0 ourServices">
             {courses.map((course) => (
               <div className="col-md-4 space">
-                <div className="box m-1 text-center">
+                <div className="boxA m-1 text-center">
                   <div className="row m-0 p-0 heading">
                     <h5>{course.name}</h5>
                   </div>
