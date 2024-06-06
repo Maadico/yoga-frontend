@@ -90,7 +90,7 @@
   }
 
   .boxA {
-    padding: 5px;
+    /* padding: 5px; */
 
     border-radius: 5px;
   }
@@ -111,11 +111,11 @@
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 505px) {
   .boxA {
     width: 90%;
     margin: 10px auto !important;
-    height: 83vw !important;
+    height: 400px !important;
   }
 }
 
