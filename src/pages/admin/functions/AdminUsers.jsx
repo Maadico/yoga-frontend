@@ -49,6 +49,7 @@ function AdminUsers() {
       setShowEditModal(false);
       setSelectedUser(null); // Reset selectedUser state
       getUsers();
+      window.location.reload();
     } catch (error) {
       console.error("Error editing user:", error);
     }
@@ -62,7 +63,7 @@ function AdminUsers() {
           data: { id: userId },
         }
       );
-      getUsers();
+      window.location.reload();
     } catch (error) {
       console.error("Error deleting user:", error);
     }
@@ -108,7 +109,13 @@ function AdminUsers() {
           </tbody>
         </Table>
 
-        <Modal show={showEditModal} onHide={() => setShowEditModal(false)}>
+        <Modal
+          show={showEditModal}
+          onHide={() => {
+            setShowEditModal(false);
+            window.location.reload();
+          }}
+        >
           <Modal.Header closeButton>
             <Modal.Title>Edit User</Modal.Title>
           </Modal.Header>
