@@ -7,7 +7,7 @@ export default function UserHomepageHero() {
       <div className="hero-content">
         <div className="hero-text">
           <h1>
-            Welcome to <b>Maddico</b>
+            Welcome to <b>Maadico</b>
           </h1>
           <h4>Embark on your journey to inner peace and well-being</h4>
           <div className="cta-buttons">
@@ -21,7 +21,7 @@ export default function UserHomepageHero() {
               href="/dashboard/user/viewcourses"
               className="cta-button explore-courses"
             >
-              Explore More Courses
+              Our Programs
             </a>
           </div>
         </div>
