@@ -4,6 +4,10 @@ const Redirect = ({ path = "login" }) => {
   const [count, setCount] = useState(3);
   const navigate = useNavigate();
   const location = useLocation();
+  const handleLogout = () => {
+    localStorage.removeItem("auth");
+    window.location.href = "/";
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,6 +28,7 @@ const Redirect = ({ path = "login" }) => {
         <h1 className="Text-center">redirecting to you in {count} second </h1>
         <div className="redirect-border" role="status">
           <span className="visually-hidden">Loading...</span>
+          <button onClick={handleLogout}>Logout</button>
         </div>
       </div>
     </>
