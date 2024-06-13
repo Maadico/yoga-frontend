@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import kunal from "../assets/doctors/Dr_kunal_Vijay_Bagade.jpg";
-import gaurav from "../assets/doctors/Dr_govind.JPG";
+import gaurav from "../assets/doctors/Dr Gaurav (Background).jpg";
 import komal from "../assets/doctors/Dr. Komals.jpg";
 import { Card, Row, Col, Image } from "react-bootstrap";
 import "./DoctorPage.css"; // Importing the CSS file

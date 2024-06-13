@@ -25,7 +25,7 @@ function Header() {
             <Nav className="me-auto">
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#programs">Programs</Nav.Link>
-              <Nav.Link href="#instructors">Doctors</Nav.Link>
+              <Nav.Link href="/doctors">Doctors</Nav.Link>
               <Nav.Link href="#gallery">Gallery</Nav.Link>
             </Nav>
           ) : (

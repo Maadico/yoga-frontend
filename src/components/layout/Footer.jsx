@@ -108,7 +108,7 @@ const Footer = () => {
       <div className="row text-center developer">
         <p>
           Copyright ©️ 2024 Maadico | Developed by{" "}
-          <a href="https://ishanaudichya.netlify.app">Ishan Audichya</a>
+          <a href="https://disneygraphics.com">Disney Graphics</a>
         </p>
       </div>
     </div>

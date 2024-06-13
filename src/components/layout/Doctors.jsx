@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import kunal from "../../assets/doctors/Dr_kunal_Vijay_Bagade.jpg";
-import gaurav from "../../assets/doctors/Dr_govind.JPG";
+import gaurav from "../../assets/doctors/Dr Gaurav (Background).jpg";
 import komal from "../../assets/doctors/Dr. Komals.jpg";
 import "./Doctors.css";
 import "swiper/css";
